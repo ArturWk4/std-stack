@@ -87,14 +87,16 @@ bool stack<T>::empty()
 
 int main()
 {
-    stack<int> a;
+    stack<int> my_stack;
 
     for(int i = 0; i < 20; ++i)
     {
-        if(i % 2 != 0)
-            a.push(i);
+        my_stack.push(i);
     }
 
-    std::cout << a.size();
+    std::cout << "Size of stack: " << my_stack.size() << std::endl;
+    std::cout << "Top element of the stack: " << my_stack.top() << std::endl;
+    my_stack.pop();
+    std::cout << "Top element after POP: " << my_stack.top();
     return 0;
 }
