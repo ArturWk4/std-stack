@@ -1,6 +1,6 @@
 #include <iostream>
 #include <stdexcept>
-//#include <stack>
+
 
 template<class T>
 class stack
