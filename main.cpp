@@ -82,7 +82,7 @@ typename stack<T>::size_type stack<T>::size()
 template<class T>
 bool stack<T>::empty()
 {
-    return m_size == 0 ? true : false;
+    return m_size == 0;
 }
 
 int main()
